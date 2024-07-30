@@ -6,42 +6,62 @@
  //Reference(Non primitive):
  //Array,Objects,Functions these non primitive are based on callByReference value.
  //JavaScript is  a dynamic typed language which mean that datatypes are assigned to values not variables.
- const score=100;
- const score_1=100.6;
- const isLoggedIn=true;
- const country="Pakistan";
- let state;
- const Id=Symbol("123");
- const anotherId=Symbol("123");
- console.log(Id===anotherId);
- const bigNumber=24340934034903409843843439040350948904n;
- console.log(bigNumber);
- console.log(typeof (bigNumber));
- const heroes=["Burhan","Hero1","Hero2"];
- console.log(heroes);
- console.log(typeof (heroes));
- const myObj={
-    name:"Muhammad Burhan",
-    age:21,
-    education:"bachelor in CS",
-    province:"Punjab"
+//  const score=100;
+//  const score_1=100.6;
+//  const isLoggedIn=true;
+//  const country="Pakistan";
+//  let state;
+//  const Id=Symbol("123");
+//  const anotherId=Symbol("123");
+//  console.log(Id===anotherId);
+//  const bigNumber=24340934034903409843843439040350948904n;
+//  console.log(bigNumber);
+//  console.log(typeof (bigNumber));
+//  const heroes=["Burhan","Hero1","Hero2"];
+//  console.log(heroes);
+//  console.log(typeof (heroes));
+//  const myObj={
+//     name:"Muhammad Burhan",
+//     age:21,
+//     education:"bachelor in CS",
+//     province:"Punjab"
 
 
- };
- console.log(myObj);
- console.log(typeof (myObj))
-const myFunction=function(age){
-    
-    let yearBorn=2024-age;
-    return yearBorn;
-    
-
-    
-}
-const yearBorn1=myFunction(22);
-console.log(yearBorn1);
-console.log(typeof (anotherId));
+//  };
+//  console.log(myObj);
+//  console.log(typeof (myObj))
+//const myFunction=function(age){
+//    
+//    let yearBorn=2024-age;
+//    return yearBorn;
+//    
+//
+//    
+//}
+// const yearBorn1=myFunction(22);
+//console.log(yearBorn1);
+//console.log(typeof (anotherId));
 //The type of non-primitive datatypes is object.
+//+++++++++++++++++ Memory +++++++++++++++++++
+//There are two type of memory
+//Stack(Primitive) and Heap(Non-Primitive)
+ let myName="Muhammad Burhan";
+ let anotherName=myName;
+ anotherName="Muhammad";
+ console.log(anotherName);
+ console.log(typeof anotherName)
+ console.log(myName)
+
+let user_one={
+ email:"burhanmalik813@gmail.com",
+ name :"Muhammad Burhan"
+};
+let user_two;
+user_two=user_one;
+user_one.email="burhan@google.com";
+console.log(user_one.email);
+console.log(user_two.email);
+
 
 
 
