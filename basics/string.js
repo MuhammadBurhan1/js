@@ -29,11 +29,28 @@ const url="https://www.burhan.com/muhammadburhan%20hussain";
 console.log(url.replace("%20","-"));
 console.log(url.includes("1"));
 console.log(gameName.split("-"));// Spilt method will convert the string into arrays.
-let text = " Burhan ";
+let text = "Burhan";
 console.log(text.charAt(2));
 console.log(text.indexOf("r"));
 console.log(text.charCodeAt(0));// it returns the unicode character of the string.unicode is a universal encoding standard.
 console.log(text.constructor());
+console.log(text.charAt(2).toUpperCase());
+let new_name="Muhammad";
+let old_name="Burhan";
+
+const new_old=new_name.concat(old_name);
+console.log(new_old);
+// console.log(new_name.trim());
+console.log(new_name.padStart(4,"Burhan"));// PadStart pads a string with multiple string until it reaches a given length.
+console.log(gameName.split("-"));
+const url1="www.muhammad%20burhan.com";
+console.log(url1.includes("burhan"))// includes method tell us about whether that string alphabet is available in that variable.
+console.log(url1.replace("%20","-"));
+console.log(text.constructor); // Constructor method returns the function that created the string prototype.
+console.log(text.endsWith("Burhan"));// endsWith checks if the following variable ends with "Burhan here"
+console.log(text.lastIndexOf("n"));// it checks the last occurrence of "n" which is "5" as index start with "0";
+console.log(text.fixed())
+
 
 
 
