@@ -71,4 +71,4 @@ let localeString=newDate.toLocaleString('default',{
 );
 console.log(localeString);
 console.log(newDate.toLocaleTimeString());
-
+console.log(Math.floor(newDate/1000));// To convert millisecond into seconds we use this formula.
