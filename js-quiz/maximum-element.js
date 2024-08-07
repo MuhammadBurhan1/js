@@ -15,4 +15,4 @@ function findMaximum(arr) {
     return maxElement;
 }
 const arr = [20,22,10,14,17,16];
-console.log(findMaximum(arr));  // Output: 8
+console.log(findMaximum(arr));  // Output: 22
