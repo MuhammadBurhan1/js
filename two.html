@@ -2,38 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM | Chai aur code</title>
+    <title>Document</title>
 </head>
-<body style="background-color: #212121; color: #fff;">
-    <div class="parent">
-        <!-- this is a comment -->
-        <div class="day">Monday</div>
-        <div class="day">Tuesday</div>
-        <div class="day">Wednesday</div>
-        <div class="day">Thursday</div>
-    </div>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
 </body>
 <script>
-    const parent = document.querySelector('.parent')
-    // console.log(parent);
-    // console.log(parent.children);
-    // console.log(parent.children[1].innerHTML);
+    const sayHitesh = function(){
+        console.log("Hitesh");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
 
-    // for (let i = 0; i < parent.children.length; i++) {
-    //      console.log(parent.children[i].innerHTML);
-        
-    // }
-    parent.children[1].style.color = "orange"
-    // console.log(parent.firstElementChild);
-    // console.log(parent.lastElementChild);
+    const changeMe = setTimeout(changeText, 2000)
 
-    const dayOne = document.querySelector('.day')
-    // console.log(dayOne);
-    // console.log(dayOne.parentElement);
-    // console.log(dayOne.nextElementSibling);
-
-    console.log("NODES: ", parent.childNodes);
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
 </script>
 </html>
